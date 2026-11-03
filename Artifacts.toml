@@ -1,0 +1,9 @@
+# The data tables of SNOwGLoBES (fluxes, cross sections, smearing matrices,
+# efficiencies, backgrounds) at a fixed commit of github.com/SNOwGLoBES/snowglobes.
+[snowglobes]
+git-tree-sha1 = "789c335289bdd7a87da5508fc12721537dfc964f"
+lazy = true
+
+    [[snowglobes.download]]
+    url = "https://codeload.github.com/SNOwGLoBES/snowglobes/tar.gz/6fa928efc93d80d30900a515fdb8c707b55b78fe"
+    sha256 = "cc92b9c55bb8e58981673a40478d7bff29d06e7bb16a1e2a674d6e32b57793ed"

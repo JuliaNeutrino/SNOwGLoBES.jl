@@ -1,0 +1,28 @@
+name = "SNOwGLoBES"
+uuid = "4930f752-8179-42a4-b4ce-b3ef0a5d9dce"
+version = "0.1.0"
+authors = ["Arnav Kapoor <kapoorarnav43@gmail.com>"]
+
+[deps]
+GLoBES = "367f8d2e-8d77-4eed-9bd4-73b32ac618fb"
+LazyArtifacts = "4af54fe1-eca0-43a8-85a7-787d91b784e3"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+SpecialFunctions = "276daf66-3868-5448-9aa4-cd146d93841b"
+
+[compat]
+GLoBES = "0.1"
+LazyArtifacts = "1"
+LinearAlgebra = "1"
+Printf = "1"
+SpecialFunctions = "2"
+julia = "1.10"
+
+[extras]
+Test = "8dfed614-e22f-5e08-85e2-ed03e7a2286c"
+
+[targets]
+test = ["Test"]
+
+[sources]
+GLoBES = {url = "https://github.com/JuliaNeutrino/GLoBES.jl"}
