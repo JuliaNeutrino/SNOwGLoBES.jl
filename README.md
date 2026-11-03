@@ -9,7 +9,7 @@ Supernova neutrino event rates with [GLoBES.jl](https://github.com/JuliaNeutrino
 
 ```julia
 using Pkg
-Pkg.add(url = "https://github.com/JuliaNeutrino/SNOwGLoBES.jl")   # not registered yet
+Pkg.add(url = "https://github.com/JuliaNeutrino/SNOwGLoBES.jl")   # not registered yet; Julia 1.11 or later
 using SNOwGLoBES, GLoBES
 
 dune = SupernovaDetector(:ar40kt, :argon)            # 40 kt of liquid argon
@@ -31,6 +31,6 @@ The data tables of SNOwGLoBES (34 MB) are a lazy artifact, downloaded the first 
 
 ## Tests
 
-`julia --project=. test/runtests.jl`. The event rates of every channel of six detectors (argon, water, scintillator, lead, high-energy argon, xenon CEvNS) and of the argon background agree with C GLoBES to 10⁻⁵ (`test/c_reference.txt`, made by `test/reference/make_reference.jl`). The events also agree with N_targets ∫Φσ dE, the flavour conversion with the formulas of SNOwGLoBES for θ13 = 0 and with the probabilities of GLoBES.jl, and the CEvNS cross sections with the SNOwGLoBES tables for its settings.
+`julia --project=. -e "using Pkg; Pkg.test()"`. The event rates of every channel of six detectors (argon, water, scintillator, lead, high-energy argon, xenon CEvNS) and of the argon background agree with C GLoBES to 10⁻⁵ (`test/c_reference.txt`, made by `test/reference/make_reference.jl`). The events also agree with N_targets ∫Φσ dE, the flavour conversion with the formulas of SNOwGLoBES for θ13 = 0 and with the probabilities of GLoBES.jl, and the CEvNS cross sections with the SNOwGLoBES tables for its settings.
 
 SNOwGLoBES is by K. Scholberg and collaborators; this package is under the GPL-2.0, like SNOwGLoBES and GLoBES.

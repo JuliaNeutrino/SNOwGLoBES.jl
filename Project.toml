@@ -16,10 +16,10 @@ LazyArtifacts = "1"
 LinearAlgebra = "1"
 Printf = "1"
 SpecialFunctions = "2"
-julia = "1.10"
+julia = "1.11"
 
 [extras]
-Test = "8dfed614-e22f-5e08-85e2-ed03e7a2286c"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 
 [targets]
 test = ["Test"]
